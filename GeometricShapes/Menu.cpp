@@ -181,7 +181,7 @@ void Menu::deleteShape(Shape* shape)
 void Menu::clearAllShapes()
 {
     this->_canvas.clear_rectangle(Point(0, 0), Point(1000, 1000));
-    for (int i = 0; i < this->_shapes.size(); i++)
+    for (int i = 0; i < this->_shapes.size(); ++i)
     {
         delete this->_shapes[i];
         return;
